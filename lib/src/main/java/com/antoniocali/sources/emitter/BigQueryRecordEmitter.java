@@ -4,9 +4,7 @@ import com.antoniocali.bq.BigQueryReadOptions;
 import com.antoniocali.sources.split.BigQuerySourceSplitState;
 import org.apache.flink.api.connector.source.SourceOutput;
 import org.apache.flink.connector.base.source.reader.RecordEmitter;
-import org.apache.flink.table.data.GenericRowData;
 import org.apache.flink.table.data.RowData;
-import org.apache.flink.util.Collector;
 
 import java.io.Serializable;
 

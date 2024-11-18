@@ -18,7 +18,6 @@ import com.antoniocali.sources.emitter.BigQueryRecordEmitter;
 import com.antoniocali.sources.reader.BigQuerySourceReader;
 import com.antoniocali.sources.reader.BigQuerySplitEnumerator;
 import com.antoniocali.sources.reader.BigQuerySplitReader;
-import tech.dojo.dsp.sources.split.*;
 
 import java.util.function.Supplier;
 
