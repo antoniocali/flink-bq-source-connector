@@ -66,7 +66,7 @@ public class BigQueryDataStreamSource implements Source<RowData, BigQuerySourceS
     public SourceReader<RowData, BigQuerySourceSplit> createReader(SourceReaderContext sourceReaderContext) throws
             Exception {
         FutureCompletingBlockingQueue<RecordsWithSplitIds<RowData>> elementsQueue = new FutureCompletingBlockingQueue<>();
-        BigQueryRecordEmitter recordEmitter = new BigQueryRecordEmitter(readOptions);
+        BigQueryRecordEmitter recordEmitter = new BigQueryRecordEmitter();
         Supplier<SplitReader<RowData, BigQuerySourceSplit>> splitReaderSupplier = () -> new BigQuerySplitReader(
                 readOptions);
         return new BigQuerySourceReader(elementsQueue, splitReaderSupplier, recordEmitter, new Configuration(),

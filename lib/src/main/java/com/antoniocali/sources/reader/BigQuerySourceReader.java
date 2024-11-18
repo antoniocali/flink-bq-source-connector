@@ -22,7 +22,8 @@ public class BigQuerySourceReader
 
     public BigQuerySourceReader(FutureCompletingBlockingQueue<RecordsWithSplitIds<RowData>> elementsQueue,
             Supplier<SplitReader<RowData, BigQuerySourceSplit>> splitFetcherManager,
-            RecordEmitter<RowData, RowData, BigQuerySourceSplitState> recordEmitter, Configuration config,
+            RecordEmitter<RowData, RowData, BigQuerySourceSplitState> recordEmitter,
+            Configuration config,
             SourceReaderContext context) {
         super(elementsQueue, splitFetcherManager, recordEmitter, config, context);
     }

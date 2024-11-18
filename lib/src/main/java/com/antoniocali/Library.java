@@ -17,10 +17,10 @@ public class Library {
         Logger LOGGER = Logger.getLogger(Library.class.getName());
 
         BigQueryReadOptions bigQueryReadOptions = BigQueryReadOptions.builder()
-                                                          .setProjectId("data-mdm-dev")
-                                                          .setDataset("dsp_data_ingestion_data_streaming_platform")
-                                                          .setTable("dbt_full_test_2")
-                                                          .setColumnFetcher("dbt_updated_at")
+                                                          .setProjectId("bq_project")
+                                                          .setDataset("bq_dataset")
+                                                          .setTable("bq_table")
+                                                          .setColumnFetcher("updated_at")
                                                           .setColumnFetcherTimeUnit(
                                                                   BigQueryReadOptions.TimeUnit.DAY)
                                                           .build();

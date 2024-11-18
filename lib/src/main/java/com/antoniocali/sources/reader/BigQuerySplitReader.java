@@ -37,7 +37,7 @@ public class BigQuerySplitReader implements SplitReader<RowData, BigQuerySourceS
     }
 
 
-    // To check where to use
+    // Attempt to use it and restore the State of the Split to avoid re-reading
     Long currentTimestampToFetch(BigQuerySourceSplit split) {
         if (split.getMaxTimestamp() > 0) {
             currentTimestamp = split.getMaxTimestamp();

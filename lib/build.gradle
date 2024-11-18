@@ -25,11 +25,11 @@ java {
 // artifact properties
 group = 'tech.dojo.dsp'
 version = '0.1-SNAPSHOT'
-mainClassName = 'tech.dojo.dsp.Library'
+mainClassName = 'com.antoniocali.Library'
 description = """Flink Quickstart Job"""
 
 application {
-    mainClass = 'tech.dojo.dsp.Library'
+    mainClass = 'com.antoniocali.Library'
 }
 ext {
     javaVersion = '11'
